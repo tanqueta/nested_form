@@ -71,9 +71,27 @@ module NestedForm
       hidden_field(:_destroy) << @template.link_to(*args, &block)
     end
 
+    def icon_to_add(*args, &block)
+      icon = args.shift
+      options = args.extract_options!.symbolize_keys
+      options[:class] = [options[:class], "btn btn-small"].compact.join(" ")
+      link_to_add(*[*args, options]) do
+        @template.content_tag(:i, '', class: "icon-#{icon}")
+      end
+    end
+
+    def icon_to_remove(*args, &block)
+      icon = args.shift
+      options = args.extract_options!.symbolize_keys
+      options[:class] = [options[:class], "btn btn-small"].compact.join(" ")
+      link_to_remove(*[*args, options]) do
+        @template.content_tag(:i, '', class: "icon-#{icon}")
+      end
+    end
+
     def fields_for_with_nested_attributes(association_name, *args)
       # TODO Test this better
-      block = args.pop || Proc.new { |fields| @template.render(:partial => "#{association_name.to_s.singularize}_fields", :locals => {:f => fields}) }
+      block = args.pop || Proc.new { |fields| @template.render(:partial => "fields_#{association_name.to_s.singularize}", :locals => {:f => fields}) }
 
       options = args.dup.extract_options!
 
@@ -91,7 +109,7 @@ module NestedForm
       classes = 'fields'
       classes << ' marked_for_destruction' if object.respond_to?(:marked_for_destruction?) && object.marked_for_destruction?
 
-      perform_wrap   = options.fetch(:nested_wrapper, true)
+      perform_wrap   = options.fetch(:nested_wrapper, false)
       perform_wrap &&= options[:wrapper] != false # wrap even if nil
 
       if perform_wrap
