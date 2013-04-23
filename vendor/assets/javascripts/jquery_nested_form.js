@@ -57,7 +57,7 @@
       if (target) {
         return $(content).appendTo($(target));
       } else {
-        return $(link).closest("." + assoc).append($(content));
+        return $(content).appendTo($(link).closest("." + assoc));
       }
     },
     removeFields: function(e) {
