@@ -16,6 +16,13 @@ module NestedForm
           capture(f, &block).to_s << after_nested_form_callbacks
         end
       end
+
+      def simple_nested_fields_for(*args, &block)
+        options = args.extract_options!.reverse_merge(:builder => NestedForm::SimpleBuilder)
+        simple_fields_for(*(args << options)) do |f|
+          capture(f, &block).to_s << after_nested_form_callbacks
+        end
+      end
     end
 
     if defined?(NestedForm::FormtasticBuilder)
