@@ -74,7 +74,6 @@ module NestedForm
     def icon_to_add(*args, &block)
       icon = args.first.is_a?(String) ? args.shift : 'plus'
       options = args.extract_options!.symbolize_keys
-      options[:class] = [options[:class], "btn btn-small"].compact.join(" ")
       options[:title] ||= 'Agregar'
       link_to_add(*[*args, options]) do
         @template.content_tag(:i, '', class: "icon-#{icon}")
@@ -84,7 +83,6 @@ module NestedForm
     def icon_to_remove(*args, &block)
       icon = args.first.is_a?(String) ? args.shift : 'minus'
       options = args.extract_options!.symbolize_keys
-      options[:class] = [options[:class], "btn btn-small"].compact.join(" ")
       options[:title] ||= 'Quitar'
       link_to_remove(*[*args, options]) do
         @template.content_tag(:i, '', class: "icon-#{icon}")
