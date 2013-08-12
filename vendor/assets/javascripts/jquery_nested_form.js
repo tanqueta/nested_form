@@ -54,6 +54,7 @@
     },
     insertFields: function(content, assoc, link) {
       var target = $(link).data('target');
+      if (target && target.substring(0, 1) == "$") target = eval(target);
       if (target) {
         return $(content).appendTo($(target));
       } else {
