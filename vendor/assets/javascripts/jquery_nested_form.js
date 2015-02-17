@@ -1,4 +1,8 @@
 (function($) {
+  function escapeRegExp(str) {
+    return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+  }
+
   window.NestedFormEvents = function() {
     this.addFields = $.proxy(this.addFields, this);
     this.removeFields = $.proxy(this.removeFields, this);
@@ -13,29 +17,19 @@
 
       // Make the context correct by replacing <parents> with the generated ID
       // of each of the parent objects
-      var context = ($(link).closest('.fields').closestChild('input, textarea, select').eq(0).attr('name') || '').replace(new RegExp('\[[a-z_]+\]$'), '');
+      var parent = $(link).closest('.fields').closestChild('input, textarea, select').eq(0);
+      var parentName = $(link).closest('.fields').closestChild('input, textarea, select').eq(0).attr('name') || '';
+      var parentId = $(link).closest('.fields').closestChild('input, textarea, select').eq(0).attr('id') || '';
+      var contextName = parentName.replace(new RegExp('(\[[a-z_]+\])+$'), '');
+      var contextId = parentId.replace(new RegExp('(_\\d+).*'), '$1');
 
-      // context will be something like this for a brand new form:
-      // project[tasks_attributes][1255929127459][assignments_attributes][1255929128105]
-      // or for an edit form:
-      // project[tasks_attributes][0][assignments_attributes][1]
-      if (context) {
-        var parentNames = context.match(/[a-z_]+_attributes(?=\]\[(new_)?\d+\])/g) || [];
-        var parentIds   = context.match(/[0-9]+/g) || [];
+      if (contextName) {
+        // Reemplazo el parentName del blueprint
+        content = content.replace(new RegExp(escapeRegExp(contextName.replace(new RegExp('\[[0-9]+\]$'), '')) + '\[[0-9]+?\]', 'g'), contextName);
 
-        for(var i = 0; i < parentNames.length; i++) {
-          if(parentIds[i]) {
-            content = content.replace(
-              new RegExp('(_' + parentNames[i] + ')_.+?_', 'g'),
-              '$1_' + parentIds[i] + '_');
-
-            content = content.replace(
-              new RegExp('(\\[' + parentNames[i] + '\\])\\[.+?\\]', 'g'),
-              '$1[' + parentIds[i] + ']');
-          }
-        }
+        // Reemplazo el parentId del blueprint
+        content = content.replace(new RegExp(escapeRegExp(contextId.replace(new RegExp('_[0-9]+$'), '')) + '_[0-9]+', 'g'), contextId);
       }
-
       // Make a unique ID for the new child
       var regexp  = new RegExp('new_' + assoc, 'g');
       var new_id  = this.newId();
