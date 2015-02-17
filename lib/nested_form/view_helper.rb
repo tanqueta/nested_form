@@ -11,6 +11,7 @@ module NestedForm
 
     if defined?(NestedForm::SimpleBuilder)
       def simple_nested_form_for(*args, &block)
+        @called_from_within_form = true
         options = args.extract_options!.reverse_merge(:builder => NestedForm::SimpleBuilder)
         simple_form_for(*(args << options)) do |f|
           capture(f, &block).to_s << after_nested_form_callbacks
@@ -20,7 +21,8 @@ module NestedForm
       def simple_nested_fields_for(*args, &block)
         options = args.extract_options!.reverse_merge(:builder => NestedForm::SimpleBuilder)
         simple_fields_for(*(args << options)) do |f|
-          capture(f, &block).to_s << after_nested_form_callbacks
+          # El @called_from_within_form es para que el after_nested_form_callbacks se ejecute solo cuando se trae x ajax un partial q tiene el simple_nested_fields_for. Sino no hay que ejecutarlo ya que los blueprints se van a renderizar al terminar el form
+          capture(f, &block).to_s << (@called_from_within_form ? '' : after_nested_form_callbacks)
         end
       end
     end
