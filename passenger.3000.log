@@ -1,0 +1,76 @@
+[ N 2021-07-02 18:30:10.8196 48262/T1 age/Wat/WatchdogMain.cpp:1373 ]: Starting Passenger watchdog...
+[ N 2021-07-02 18:30:10.8458 48264/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2021-07-02 18:30:10.8465 48264/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2021-07-02 18:30:10.8891 48264/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 48264
+2021/07/02 18:30:12 [error] 48267#0: *4 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", host: "0.0.0.0"
+[ N 2021-07-02 18:30:14.4322 48264/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+2021/07/02 18:30:27 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:28 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:28 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/"
+2021/07/02 18:30:28 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/cs_of_ws.js" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /cs_of_ws.js HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/cs_of_ws.js"
+2021/07/02 18:30:29 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:31 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/cs_of_ws.js" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /cs_of_ws.js HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/cs_of_ws.js"
+2021/07/02 18:30:35 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:35 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/"
+2021/07/02 18:30:36 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:36 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/"
+2021/07/02 18:30:36 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:36 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/"
+2021/07/02 18:30:36 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:36 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/"
+2021/07/02 18:30:37 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:37 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/"
+2021/07/02 18:30:37 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:37 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/"
+2021/07/02 18:30:37 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:37 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/"
+2021/07/02 18:30:37 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:37 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/"
+2021/07/02 18:30:37 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:37 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/"
+2021/07/02 18:30:37 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:37 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/"
+2021/07/02 18:30:38 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:38 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/"
+2021/07/02 18:30:38 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:38 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/"
+2021/07/02 18:30:38 [error] 48267#0: *5 "/Users/seba/Laburo/Codigo/nested_form/public/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+2021/07/02 18:30:38 [error] 48267#0: *5 open() "/Users/seba/Laburo/Codigo/nested_form/public/favicon.ico" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /favicon.ico HTTP/1.1", host: "localhost:3000", referrer: "http://localhost:3000/"
+
+[ N 2021-07-02 18:31:20.5032 48264/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2021-07-02 18:31:20.5032 48264/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2021-07-02 18:31:20.5033 48264/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5034 48264/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2021-07-02 18:31:20.5034 48264/Th Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5034 48264/Tw Ser/Server.h:901 ]: [ServerThr.13] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5034 48264/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5035 48264/Tw Ser/Server.h:558 ]: [ServerThr.13] Shutdown finished
+[ N 2021-07-02 18:31:20.5034 48264/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5034 48264/T12 Ser/Server.h:901 ]: [ServerThr.16] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5035 48264/T14 Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5034 48264/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5034 48264/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5036 48264/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2021-07-02 18:31:20.5034 48264/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5036 48264/T14 Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2021-07-02 18:31:20.5034 48264/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5037 48264/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2021-07-02 18:31:20.5037 48264/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2021-07-02 18:31:20.5034 48264/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5034 48264/Ty Ser/Server.h:901 ]: [ServerThr.14] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5039 48264/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2021-07-02 18:31:20.5039 48264/Ty Ser/Server.h:558 ]: [ServerThr.14] Shutdown finished
+[ N 2021-07-02 18:31:20.5036 48264/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2021-07-02 18:31:20.5034 48264/T10 Ser/Server.h:901 ]: [ServerThr.15] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5034 48264/Td Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5034 48264/Th Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2021-07-02 18:31:20.5035 48264/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2021-07-02 18:31:20.5034 48264/Tp Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5036 48264/T12 Ser/Server.h:558 ]: [ServerThr.16] Shutdown finished
+[ N 2021-07-02 18:31:20.5033 48264/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2021-07-02 18:31:20.5042 48264/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2021-07-02 18:31:20.5040 48264/T10 Ser/Server.h:558 ]: [ServerThr.15] Shutdown finished
+[ N 2021-07-02 18:31:20.5040 48264/Td Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2021-07-02 18:31:20.5041 48264/Tp Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2021-07-02 18:31:20.5038 48264/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2021-07-02 18:31:22.1707 48264/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished

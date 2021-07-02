@@ -12,9 +12,12 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "rake"
   s.add_development_dependency "bundler"
-  s.add_development_dependency "rspec-rails", "~> 2.6"
+  s.add_development_dependency "rspec-rails", "~> 5"
   s.add_development_dependency "mocha"
-  s.add_development_dependency "capybara", "~> 1.1"
+  s.add_development_dependency "capybara", "~> 2.12.0"
+  s.add_development_dependency "selenium-webdriver", '~> 2.53.0'
+  s.add_development_dependency "rexml"
+  s.add_development_dependency "webrick"
 
   s.rubyforge_project = s.name
   s.required_rubygems_version = ">= 1.3.4"

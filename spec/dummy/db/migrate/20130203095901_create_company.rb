@@ -1,4 +1,4 @@
-class CreateCompany < ActiveRecord::Migration
+class CreateCompany < ActiveRecord::Migration[6.0]
   def self.up
     create_table :companies do |t|
       t.string :name

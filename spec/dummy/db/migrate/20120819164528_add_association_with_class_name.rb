@@ -1,4 +1,4 @@
-class AddAssociationWithClassName < ActiveRecord::Migration
+class AddAssociationWithClassName < ActiveRecord::Migration[6.0]
   def self.up
     create_table :project_tasks do |t|
       t.integer :project_id
