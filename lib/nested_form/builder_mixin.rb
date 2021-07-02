@@ -39,7 +39,7 @@ module NestedForm
       @template.after_nested_form(fields_blueprint_id) do
         block, options = @fields[fields_blueprint_id].values_at(:block, :options)
         options[:child_index] = "new_#{association}"
-        blueprint_string_code = URI.encode(fields_for(association, model_object, options, &block).to_str)
+        blueprint_string_code = CGI.escape(fields_for(association, model_object, options, &block).to_str)
         blueprint_code = <<JS
 if (typeof nestedFormBlueprints === 'undefined')
   window.nestedFormBlueprints = {};
